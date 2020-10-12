@@ -12,7 +12,7 @@ import Aleatorio from "./components/basicos/Aleatorio";
 export default (_) => (
   <div id="app">
     <h1>Fundamento ReactJs</h1>
-    <Aleatorio min={1} max={3}></Aleatorio>
+    <Aleatorio min={1} max={10}></Aleatorio>
     <Fragmento />
     <ComParamentro titulo="Situação do Aluno" aluno="Kailany" nota={9.3} />
     <Primeiro></Primeiro>
