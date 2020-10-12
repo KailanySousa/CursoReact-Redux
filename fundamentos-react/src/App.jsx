@@ -1,3 +1,4 @@
+import "./App.css";
 import React from "react";
 
 import Card from "./components/layout/Card";
@@ -11,19 +12,21 @@ import Aleatorio from "./components/basicos/Aleatorio";
 // com Arrow Function, () simboliza que a função não tem parametros, _ simboliza que a função tem um parametro mas eles não interessam
 // também não precisa ter as {} para abrir e fechar a função, sendo assim, o return é desnecessário
 export default (_) => (
-  <div id="app">
+  <div id="App">
     <h1>Fundamento ReactJs</h1>
-    <Card titulo="#05 - Desafio Aleatório">
-      <Aleatorio min={1} max={10}></Aleatorio>
-    </Card>
-    <Card titulo="#03 - Fragmento">
-      <Fragmento />
-    </Card>
-    <Card titulo="#02 - Com Parâmetro">
-      <ComParamentro titulo="Situação do Aluno" aluno="Kailany" nota={9.3} />
-    </Card>
-    <Card titulo="#01 - Primeiro Componente">
-      <Primeiro></Primeiro>
-    </Card>
+    <div className="Cards">
+      <Card titulo="#05 - Desafio Aleatório">
+        <Aleatorio min={1} max={10}></Aleatorio>
+      </Card>
+      <Card titulo="#03 - Fragmento">
+        <Fragmento />
+      </Card>
+      <Card titulo="#02 - Com Parâmetro">
+        <ComParamentro titulo="Situação do Aluno" aluno="Kailany" nota={9.3} />
+      </Card>
+      <Card titulo="#01 - Primeiro Componente">
+        <Primeiro></Primeiro>
+      </Card>
+    </div>
   </div>
 );
