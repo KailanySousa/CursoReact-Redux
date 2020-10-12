@@ -2,13 +2,6 @@ import "./index.css";
 import ReactDOM from "react-dom";
 import React from "react";
 
-import Primeiro from "./components/basicos/Primeiro";
-import ComParamentro from "./components/basicos/ComParamentro";
+import App from "./App";
 
-ReactDOM.render(
-  <div>
-    <Primeiro></Primeiro>
-    <ComParamentro titulo="Segundo Componente" subtitulo="Muito Criativo" />
-  </div>,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));
