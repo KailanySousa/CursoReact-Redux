@@ -15,16 +15,16 @@ export default (_) => (
   <div id="App">
     <h1>Fundamento ReactJs</h1>
     <div className="Cards">
-      <Card titulo="#05 - Desafio Aleatório">
+      <Card titulo="#05 - Desafio Aleatório" color="#E94C6F">
         <Aleatorio min={1} max={10}></Aleatorio>
       </Card>
-      <Card titulo="#03 - Fragmento">
+      <Card titulo="#03 - Fragmento" color="#542733">
         <Fragmento />
       </Card>
-      <Card titulo="#02 - Com Parâmetro">
+      <Card titulo="#02 - Com Parâmetro" color="#5A6A62">
         <ComParamentro titulo="Situação do Aluno" aluno="Kailany" nota={9.3} />
       </Card>
-      <Card titulo="#01 - Primeiro Componente">
+      <Card titulo="#01 - Primeiro Componente" color="#C6D5CD" fontColor="#000">
         <Primeiro></Primeiro>
       </Card>
     </div>
