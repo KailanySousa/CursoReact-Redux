@@ -7,7 +7,7 @@ export default (props) => {
     <div>
       <h1>Aleatório</h1>
       <p>
-        Sorteio de um número aleatório entre {props.min} e {props.max}{" "}
+        Sorteio de um número aleatório entre {min} e {max}{" "}
       </p>
       <p>Número sorteado: {numeroSorteado}</p>
     </div>
