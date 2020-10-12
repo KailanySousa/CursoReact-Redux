@@ -6,6 +6,7 @@ import Primeiro from "./components/basicos/Primeiro";
 import ComParamentro from "./components/basicos/ComParamentro";
 import Fragmento from "./components/basicos/Fragmento";
 import Aleatorio from "./components/basicos/Aleatorio";
+import Familia from "./components/basicos/Familia";
 
 // no export com default pode ser uma função anonima, pode ser declara também como arrowfunction
 // caso o export seja sem o default a função tem que ter nome
@@ -15,7 +16,10 @@ export default (_) => (
   <div id="App">
     <h1>Fundamento ReactJs</h1>
     <div className="Cards">
-      <Card titulo="#05 - Desafio Aleatório" color="#E94C6F">
+      <Card titulo="#05 - Componente com Filhos" color="#00C8F8">
+        <Familia sobrenome="Sousa"></Familia>
+      </Card>
+      <Card titulo="#04 - Desafio Aleatório" color="#E94C6F">
         <Aleatorio min={1} max={10}></Aleatorio>
       </Card>
       <Card titulo="#03 - Fragmento" color="#542733">
