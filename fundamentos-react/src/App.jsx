@@ -2,12 +2,14 @@ import "./App.css";
 import React from "react";
 
 import Card from "./components/layout/Card";
-import Primeiro from "./components/basicos/Primeiro";
-import ComParamentro from "./components/basicos/ComParamentro";
-import Fragmento from "./components/basicos/Fragmento";
-import Aleatorio from "./components/basicos/Aleatorio";
-import Familia from "./components/basicos/Familia";
+
+import ListaAlunos from './components/repeticao/ListasAlunos';
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
+import Familia from "./components/basicos/Familia";
+import Aleatorio from "./components/basicos/Aleatorio";
+import Fragmento from "./components/basicos/Fragmento";
+import ComParamentro from "./components/basicos/ComParamentro";
+import Primeiro from "./components/basicos/Primeiro";
 
 // no export com default pode ser uma função anonima, pode ser declara também como arrowfunction
 // caso o export seja sem o default a função tem que ter nome
@@ -17,6 +19,9 @@ export default (_) => (
   <div id="App">
     <h1>Fundamento ReactJs</h1>
     <div className="Cards">
+      <Card titulo="#06 - Repetição" color="#FF4C65">
+        <ListaAlunos></ListaAlunos>
+      </Card>
       <Card titulo="#05 - Componente com Filhos" color="#00C8F8">
         <Familia sobrenome="Sousa">
           <FamiliaMembro nome="Kailany"></FamiliaMembro>
