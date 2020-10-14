@@ -7,6 +7,7 @@ import ComParamentro from "./components/basicos/ComParamentro";
 import Fragmento from "./components/basicos/Fragmento";
 import Aleatorio from "./components/basicos/Aleatorio";
 import Familia from "./components/basicos/Familia";
+import FamiliaMembro from "./components/basicos/FamiliaMembro";
 
 // no export com default pode ser uma função anonima, pode ser declara também como arrowfunction
 // caso o export seja sem o default a função tem que ter nome
@@ -17,7 +18,11 @@ export default (_) => (
     <h1>Fundamento ReactJs</h1>
     <div className="Cards">
       <Card titulo="#05 - Componente com Filhos" color="#00C8F8">
-        <Familia sobrenome="Sousa"></Familia>
+        <Familia sobrenome="Sousa">
+          <FamiliaMembro nome="Kailany"></FamiliaMembro>
+          <FamiliaMembro nome="Gama"></FamiliaMembro>
+          <FamiliaMembro></FamiliaMembro>
+        </Familia>
       </Card>
       <Card titulo="#04 - Desafio Aleatório" color="#E94C6F">
         <Aleatorio min={1} max={10}></Aleatorio>
