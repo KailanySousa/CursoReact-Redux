@@ -3,7 +3,8 @@ import React from "react";
 
 import Card from "./components/layout/Card";
 
-import ListaAlunos from './components/repeticao/ListasAlunos';
+import TabelaProdutos from "./components/repeticao/TabelaProdutos";
+import ListaAlunos from "./components/repeticao/ListasAlunos";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import Familia from "./components/basicos/Familia";
 import Aleatorio from "./components/basicos/Aleatorio";
@@ -19,6 +20,9 @@ export default (_) => (
   <div id="App">
     <h1>Fundamento ReactJs</h1>
     <div className="Cards">
+      <Card titulo="#07 - Exercício Repetição" color="#BA4C65">
+        <TabelaProdutos></TabelaProdutos>
+      </Card>
       <Card titulo="#06 - Repetição" color="#FF4C65">
         <ListaAlunos></ListaAlunos>
       </Card>
