@@ -1,0 +1,8 @@
+.Box-Input {
+  display: "flex";
+  flex-direction: "column";
+}
+
+.Input input {
+  font-size: 1.4rem;
+}
