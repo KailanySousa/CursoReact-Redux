@@ -1,0 +1,12 @@
+.Mega {
+    margin-top: 10px;
+}
+
+.Mega label {
+    margin-right: 10px;
+}
+
+.Mega input {
+    font-size: 1.4rem;
+    width: 50px;
+}
