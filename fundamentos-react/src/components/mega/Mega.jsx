@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Mega.css';
 
+import Valor from './Valor';
+
 export default props => {
 
     const [qtde, setQtde] = useState(props.qtde || 6);
@@ -27,7 +29,11 @@ export default props => {
     return (
         <div>
             <h2>Mega</h2>
-            <h3>{numeros.join(' ')}</h3>
+            <div className="Valores">
+                {numeros.map(item => {
+                    return <Valor numero={item}></Valor>
+                })}
+            </div>
             <div className="Mega">
                 <label htmlFor="qtde">Qtde: </label>
                 <input min="6" max="15" type="number" name="qtde" id="qtde" value={qtde} onChange={(e) => {
